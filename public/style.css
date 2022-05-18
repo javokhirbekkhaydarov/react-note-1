@@ -1,0 +1,95 @@
+body {
+  background: #0e7fa8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #cb3066,
+    #16bffd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #cb3066,
+    #16bffd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #f0f0f0;
+}
+.timer-container {
+  display: flex;
+  margin: 30px 0;
+  /* border: 3px solid #e5e5e5; */
+  border-radius: 5px;
+  padding: 60px 30px;
+
+  background: linear-gradient(45deg, #f0f0f0, #cacaca);
+  box-shadow: 2px -6px 32px #cb3066, -6px 6px 12px #15a5af;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.timer-container-interval {
+  margin: 30px 0;
+  /* border: 3px solid #e5e5e5; */
+  border-radius: 5px;
+  padding: 15px 30px;
+  height: 130px;
+  overflow-y: auto;
+  background: linear-gradient(45deg, #f0f0f0, #cacaca);
+  box-shadow: 2px -6px 32px #cb3066, -6px 6px 12px #15a5af;
+  background: rgba(255, 255, 255, 0.3);
+}
+.timer-container-interval::-webkit-scrollbar {
+  width: 4px;
+}
+.timer-container-interval::-webkit-scrollbar:hover {
+  width: 14px;
+}
+.timer-container-interval::-webkit-scrollbar-thumb {
+  background: #0e7fa8;
+  border-radius: 8px;
+}
+.timer-container-interval::-webkit-scrollbar-thumb:hover {
+  background: #0e7fa8;
+  border-radius: 8px;
+  width: 10px;
+}
+
+.timer-col {
+  text-align: center;
+  margin: 0 40px;
+  min-width: 90px;
+  position: relative;
+}
+.timer-label {
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.btn {
+  margin: 10px;
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  color: #cb3066;
+}
+
+@media (max-width: 800px) {
+  .timer-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .timer-col + .timer-col {
+    margin-top: 20px;
+  }
+}
