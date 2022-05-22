@@ -5,7 +5,7 @@ export default class Card extends Component {
     return (
       <div>
         <h1>
-          <i>i think work</i>
+          <i>this is questions and answears</i>
         </h1>
       </div>
     );
